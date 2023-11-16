@@ -6,6 +6,7 @@ import java.awt.*;
 public class BorderLayout01 extends JFrame {
     public BorderLayout01(){
         setTitle("BorderLayout Test");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         Container c = getContentPane();
 
