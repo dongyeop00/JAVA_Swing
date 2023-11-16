@@ -1,4 +1,4 @@
-package Chapter09;
+package main.Chapter09;
 
 import javax.swing.*;
 import java.awt.*;
