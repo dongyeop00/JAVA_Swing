@@ -1,4 +1,4 @@
-package main.Chapter07;
+package main.Chapter07.ArrayList;
 
 import java.util.ArrayList;
 import java.util.Scanner;

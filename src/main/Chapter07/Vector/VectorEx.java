@@ -1,4 +1,4 @@
-package main.Chapter07;
+package main.Chapter07.Vector;
 
 import java.util.Vector;
 
@@ -6,6 +6,10 @@ public class VectorEx {
     public static void main(String[] args) {
         //int형 Vector 선언
         Vector<Integer> v = new Vector<>();
+
+        int c = v.capacity();
+        int s = v.size();
+        System.out.println("Size :" + s + "  Capacity : " + c);
 
         //요소 삽입
         v.add(5);

@@ -24,9 +24,9 @@ public class MouseListenerEx extends JFrame {
 
     class MyMouseListener implements MouseListener {
         public void mousePressed(MouseEvent e){
-            int x = e.getX();
-            int y = e.getY();
-            a.setLocation(x,y);
+            int x = e.getX(); //마우스 클릭시 x 좌표 값 받기
+            int y = e.getY(); //마우스 클릭스 y 좌표 값 받기
+            a.setLocation(x,y); //JLabel a를 x,y좌표 값으로 이동
         }
 
         public void mouseReleased(MouseEvent e){}

@@ -1,4 +1,4 @@
-package main.Chapter07;
+package main.Chapter07.HashMap;
 
 import java.util.HashMap;
 
