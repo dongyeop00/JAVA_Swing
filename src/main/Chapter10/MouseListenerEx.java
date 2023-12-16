@@ -14,8 +14,9 @@ public class MouseListenerEx extends JFrame {
         c.addMouseListener(new MyMouseListener());
 
         c.setLayout(null);
-        a.setSize(50,20);
-        a.setLocation(30,30);
+        //a.setSize(50,20);
+        //a.setLocation(30,30);
+        a.setBounds(30,30,50,20);
         c.add(a);
 
         setSize(250,250);

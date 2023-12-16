@@ -8,6 +8,7 @@ import java.awt.event.MouseMotionListener;
 
 public class MouseListenerAllEx extends JFrame {
     private JLabel la = new JLabel("No Mouse Event");
+    private JLabel ck = new JLabel(" ");
     public MouseListenerAllEx(){
         setTitle("MouseListener와 MouseMotionListener 예제");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -20,6 +21,7 @@ public class MouseListenerAllEx extends JFrame {
         c.addMouseMotionListener(listener);
 
         c.add(la);
+        c.add(ck);
 
         setSize(300,200);
         setVisible(true);
@@ -34,7 +36,9 @@ public class MouseListenerAllEx extends JFrame {
             la.setText("MouseReleased(" + e.getX() + ", " + e.getY() + ")");
         }
 
-        public void mouseClicked(MouseEvent e){}
+        public void mouseClicked(MouseEvent e){
+            ck.setText(String.valueOf(e.getClickCount()));
+        }
         public void mouseEntered(MouseEvent e){
             Component c = (Component)e.getSource();
             c.setBackground(Color.CYAN);
